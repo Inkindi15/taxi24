@@ -19,7 +19,7 @@ I am  building an application,that will help the taxi industry in Rwanda to mana
 - View a list of the 3 closest drivers for a specific rider 
 
 
-# API Endpoints
+### API Endpoints
 
 | Request Routes         | Methods |                            Description                                | Completed |
 | :--------------------- | :-----: | -------------------------------------:                                | :-------: |
@@ -37,12 +37,12 @@ I am  building an application,that will help the taxi industry in Rwanda to mana
 
 
 
-# Backend, Frameworks and other tools used
+### Backend, Frameworks and other tools used
 
 - Spring Boot
 - JUnit
 
-# Installation Guide   
+### Installation Guide   
 
 To use this project locally you must install VS Code, then clone the project using
 
@@ -64,7 +64,7 @@ and finally to run tests you can use
 > mvn test
 ```
 
-# Running the application locally
+### Running the application locally
 
 There are several ways to run a Spring Boot application on your local machine. One way is to execute the main method in the
  com.arc.sbtest.SBtemplateApplication  class from your IDE.
@@ -86,7 +86,7 @@ Alternatively you can use the Spring Boot Maven plugin like so:
 > mvn spring-boot:run
 ```
 
-#Built With
+### Built With
 
  - Maven    Dependency Management.
 
@@ -94,7 +94,7 @@ Alternatively you can use the Spring Boot Maven plugin like so:
 
  - Lombok   Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much  more.
 
-#Packages
+### Packages
 
 * **models** — to hold our entities;
 
@@ -104,11 +104,11 @@ Alternatively you can use the Spring Boot Maven plugin like so:
 
 * **controllers** — to listen to the client;
 
-### Contributor
+## Contributor
 
 Inkindi Umutoni Raissa Macrine [inkindiraissa@gmail.com](inkindiraissa@gmail.com)
 
 
-### Copyright
+## Copyright
 
 Copyright (c) IURM 2020
