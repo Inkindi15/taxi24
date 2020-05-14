@@ -46,7 +46,7 @@ I am  building an application,that will help the taxi industry in Rwanda to mana
 To use this project locally you must install VS Code, then clone the project using
 
 ```
-> git clone https://github.com/Inkindi15/taxi24
+> git clone https://github.com/Inkindi15/taxi24.git
 ```
 
 after cloning the project, you must install all the project dependencies using
@@ -98,7 +98,7 @@ Alternatively you can use the Spring Boot Maven plugin like so:
  -git      Free and Open-Source distributed version control system.
 
  -Lombok   Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much  more.
- 
+
  -Swagger  Open-Source software framework backed by a large ecosystem of tools that helps developers design, build, document, and consume RESTful Web services.
 
 #Packages
