@@ -36,6 +36,9 @@ I am  building an application,that will help the taxi industry in Rwanda to mana
 | `/riders/2/closest-drivers`                | **GET**     |user can view a list of the 3 closest drivers for a specific rider                                                |    **Yes**    |                  
 
 
+### POSTMAN API Documentation
+
+[Documentation link](https://documenter.getpostman.com/view/9828893/SzmjyudV?version=latest)
 
 ### Backend, Frameworks and other tools used
 
