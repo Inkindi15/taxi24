@@ -94,8 +94,11 @@ Alternatively you can use the Spring Boot Maven plugin like so:
 #Built With
 
  -Maven    Dependency Management.
+
  -git      Free and Open-Source distributed version control system.
- -Lombok   Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much    more.
+
+ -Lombok   Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much  more.
+ 
  -Swagger  Open-Source software framework backed by a large ecosystem of tools that helps developers design, build, document, and consume RESTful Web services.
 
 #Packages
