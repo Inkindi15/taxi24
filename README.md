@@ -1,6 +1,6 @@
 # TAXI 24 REST API
 
-> What am i  building?
+> What am I  building?
 
 I am  building an application,that will help the taxi industry in Rwanda to manage their fleet of drivers and allocate drivers to passengers. 
 
@@ -9,32 +9,33 @@ I am  building an application,that will help the taxi industry in Rwanda to mana
 - View all Drivers
 - View available Drivers
 - View all available Drivers within a specific Location
-- View a specific Driver's ID
-- Create a Trip case
-- View all Trips's Status
+- View a specific Driver
+- Create a Trip
+- Complete a Trip and create an invoice
+- View all Trips
+- View all active Trips
 - View all Riders
-- View a specific Rider's ID
+- View a specific Rider
+- View a list of the 3 closest drivers for a specific rider 
 
 
 # API Endpoints
 
 | Request Routes         | Methods |                            Description                                | Completed |
 | :--------------------- | :-----: | -------------------------------------:                                | :-------: |
-| /cases/                | GET     |user can view all drivers                                              |    Yes    |
-| /cases                 | GET     |user can view driver's status within a specific loaction               |    Yes    |
-| /cases                 | GET     |user can view  all driver's ID                                         |    Yes    |
-| /cases/                | GET     |user can view all available drivers within 3km for a specific location |    Yes    |
-| /cases/                | POST    |user can create a Trip case                                            |    Yes    |
-| /cases/                | PUT     |user can update the Trip case                                          |    Yes    |
-| /cases/                | GET     |user can view all Trip's status                                        |    Yes    |
-| /cases/                | GET     |user can view all riders                                               |    Yes    |
-| /cases/                | GET     |user can view rider'ID                                                 |    Yes    |                  
+| /drivers                | GET     |user can view all drivers                                              |    Yes    |
+| /drivers/available                 | GET     |View available Drivers                                         |    Yes    |
+| /drivers/around?distance=3&longitude=30.094131&latitude=-1.956250                | GET     |user can View all available Drivers within a specific Location |    Yes    |
+| /drivers/1                | GET    |user can View a specific Driver                                            |    Yes    |
+| /trips?rider_id=1&driver_id=2&dest_lat=-1.943192&dest_long=30.058145                | POST    |user can create a Trip                                            |    Yes    |
+| /trips/active                | GET     |user can view all active Trips                                       |    Yes    |
+| /trips/1/complete                | PUT     |user can complete a Trip and view the created invoice                                       |    Yes    |
+| /riders               | GET     |user can view all riders                                               |    Yes    |
+| /riders               | POST     |user can create riders                                               |    Yes    |
+| /riders/1                | GET     |user can view a specific rider                                                 |    Yes    |                  
+| /riders/2/closest-drivers                | GET     |user can view a list of the 3 closest drivers for a specific rider                                                |    Yes    |                  
 
 
-
-# API Documentation
-
-[Documentation link]()
 
 # Backend, Frameworks and other tools used
 
@@ -56,17 +57,11 @@ after cloning the project, you must install all the project dependencies using
 > mvn clean install
 ```
 
-after that you are good to go, run the project as follows
-
-```
-> mvn exec:java -Dexec.mainClass=com.mycompany.App     
-```
-
 to test endpoints you will use a tool called postman.
 and finally to run tests you can use
 
 ```
->mvn test
+> mvn test
 ```
 
 # Running the application locally
@@ -88,28 +83,26 @@ Right Click on the file and Run as Java Application
 Alternatively you can use the Spring Boot Maven plugin like so:
 
 ```
->mvn spring-boot:run
+> mvn spring-boot:run
 ```
 
 #Built With
 
- -Maven    Dependency Management.
+ - Maven    Dependency Management.
 
- -git      Free and Open-Source distributed version control system.
+ - git      Free and Open-Source distributed version control system.
 
- -Lombok   Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much  more.
-
- -Swagger  Open-Source software framework backed by a large ecosystem of tools that helps developers design, build, document, and consume RESTful Web services.
+ - Lombok   Never write another getter or equals method again, with one annotation your class has a fully featured builder, Automate your logging variables, and much  more.
 
 #Packages
 
-models — to hold our entities;
+* **models** — to hold our entities;
 
-repositories — to communicate with the database;
+* **repositories** — to communicate with the database;
 
-services — to hold our business logic
+* **services** — to hold our business logic
 
-controllers — to listen to the client;
+* **controllers** — to listen to the client;
 
 ### Contributor
 
