@@ -41,6 +41,8 @@ I am  building an application,that will help the taxi industry in Rwanda to mana
 
 - Spring Boot
 - JUnit
+- H2 Database
+- Lombok
 
 ### Installation Guide   
 
@@ -67,7 +69,7 @@ and finally to run tests you can use
 ### Running the application locally
 
 There are several ways to run a Spring Boot application on your local machine. One way is to execute the main method in the
- com.arc.sbtest.SBtemplateApplication  class from your IDE.
+ com.bkcoding.taxi24.Taxi24Application  class from your IDE.
 
 Download the zip or clone the Git repository.
 
