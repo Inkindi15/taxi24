@@ -23,17 +23,17 @@ I am  building an application,that will help the taxi industry in Rwanda to mana
 
 | Request Routes         | Methods |                            Description                                | Completed |
 | :--------------------- | :-----: | -------------------------------------:                                | :-------: |
-| /drivers                | GET     |user can view all drivers                                              |    Yes    |
-| /drivers/available                 | GET     |View available Drivers                                         |    Yes    |
-| /drivers/around?distance=3&longitude=30.094131&latitude=-1.956250                | GET     |user can View all available Drivers within a specific Location |    Yes    |
-| /drivers/1                | GET    |user can View a specific Driver                                            |    Yes    |
-| /trips?rider_id=1&driver_id=2&dest_lat=-1.943192&dest_long=30.058145                | POST    |user can create a Trip                                            |    Yes    |
-| /trips/active                | GET     |user can view all active Trips                                       |    Yes    |
-| /trips/1/complete                | PUT     |user can complete a Trip and view the created invoice                                       |    Yes    |
-| /riders               | GET     |user can view all riders                                               |    Yes    |
-| /riders               | POST     |user can create riders                                               |    Yes    |
-| /riders/1                | GET     |user can view a specific rider                                                 |    Yes    |                  
-| /riders/2/closest-drivers                | GET     |user can view a list of the 3 closest drivers for a specific rider                                                |    Yes    |                  
+| `/drivers`                | **GET**     |user can view all drivers                                              |    **Yes**    |
+| `/drivers/available`                 | **GET**     |View available Drivers                                         |    **Yes**    |
+| `/drivers/around?distance=3&longitude=30.094131&latitude=-1.956250`                | **GET**     |user can View all available Drivers within a specific Location |    **Yes**    |
+| `/drivers/1`                | **GET**    |user can View a specific Driver                                            |    **Yes**    |
+| `/trips?rider_id=1&driver_id=2&dest_lat=-1.943192&dest_long=30.058145`                | **POST**    |user can create a Trip                                            |    **Yes**    |
+| `/trips/active`                | **GET**     |user can view all active Trips                                       |    **Yes**    |
+| `/trips/1/complete`                | **PUT**     |user can complete a Trip and view the created invoice                                       |    **Yes**    |
+| `/riders`               | **GET**     |user can view all riders                                               |    **Yes**    |
+| `/riders`               | **POST**     |user can create riders                                               |    **Yes**    |
+| `/riders/1`                | **GET**     |user can view a specific rider                                                 |    **Yes**    |                  
+| `/riders/2/closest-drivers`                | **GET**     |user can view a list of the 3 closest drivers for a specific rider                                                |    **Yes**    |                  
 
 
 
