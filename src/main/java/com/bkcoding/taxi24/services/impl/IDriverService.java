@@ -35,7 +35,9 @@ public class IDriverService implements DriverService {
 
   @Override
   public Driver findById(int id) {
-    return driverRepository.findById(id).orElseThrow(() -> new NotFoundException("Driver not found"));
+    return driverRepository
+        .findById(id)
+        .orElseThrow(() -> new NotFoundException("Driver not found"));
   }
 
   @Override
